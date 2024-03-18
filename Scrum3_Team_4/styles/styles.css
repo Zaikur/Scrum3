@@ -1,0 +1,70 @@
+
+
+.form-section input,
+.form-section button {
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 20px;
+}
+
+/* Add some padding and possibly other styles to the form itself */
+.form-section form {
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+/* Add some styles to the body, h1, ul, li, table, th, and td elements */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    background-color:#333;
+    margin: 0 auto;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+}
+
+ul {
+    counter-reset: item;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
