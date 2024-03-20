@@ -14,7 +14,7 @@
 ***********************************************************************************************************************/
 
 $(document).ready(function() {
-    const apiUrl = '../Provider_4/Testers/record_handler.php';
+    const apiUrl = '../Provider_4/Testers/API_4.php';
     const tableName = getTableNameFromUrl(); // Global variable to store table name
     let tableColumns = []; // Global variable to store column names
 

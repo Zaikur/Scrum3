@@ -3,6 +3,11 @@
 * Ethan Niehus
 * 3/20/2024
 * This file is an API that provides JSON responses for client requests for all tables.
+*
+* Quinton Nelson
+* 3/20/2024
+* Added an 'action' parameter to the GET request to allow for different actions to be performed.
+* Added a switch statement to handle different actions.
 ***********************************************************************************************************************/
 require_once '../class_lib/DBClass.php';
 
@@ -15,13 +20,23 @@ try {
     $method = $_SERVER['REQUEST_METHOD'];
 
     if ($method === 'GET') {
+        $action = $_GET['action'] ?? null;
         $tableName = $_GET['tableName'] ?? '';
         if (!$tableName) {
             throw new Exception("Table name is required.");
         }
 
-        $rows = $db->displayRecords($tableName);
-        echo json_encode(['success' => true, 'data' => $rows]);
+        switch ($action) {
+            case 'showColumns':
+                $columns = $db->showColumns($tableName);
+                echo json_encode(['success' => true, 'data' => $columns]);
+                break;
+
+            default:
+                $rows = $db->displayRecords($tableName);
+                echo json_encode(['success' => true, 'data' => $rows]);
+                break;
+        }
     }
     else if ($method === 'POST') {
         $action = $_POST['action'] ?? '';
