@@ -26,38 +26,6 @@
         }
         echo "</ul>";
     }
-    ?>
-    
-    <h2>Test API Functions</h2>
-    <form method="post" action="../Provider_4/Testers/API_4.php">
-        <h3>Add Record</h3>
-        <input type="hidden" name="action" value="add">
-        <input type="hidden" name="tableName" value="users">
-        <label for="add-record">Record Data:</label>
-        <input type="text" id="add-record" name="record">
-        <button type="submit">Add Record</button>
-    </form>
-    
-    <form method="post" action="../Provider_4/Testers/API_4.php">
-        <h3>Update Record</h3>
-        <input type="hidden" name="action" value="update">
-        <input type="hidden" name="tableName" value="users">
-        <label for="update-id">Record ID:</label>
-        <input type="text" id="update-id" name="id">
-        <label for="update-record">New Record Data:</label>
-        <input type="text" id="update-record" name="record">
-        <button type="submit">Update Record</button>
-    </form>
-    
-    <form method="post" action="../Provider_4/Testers/API_4.php">
-        <h3>Delete Record</h3>
-        <input type="hidden" name="action" value="delete">
-        <input type="hidden" name="tableName" value="users">
-        <label for="delete-id">Record ID:</label>
-        <input type="text" id="delete-id" name="id">
-        <button type="submit">Delete Record</button>
-    </form>
-
-   
+    ?>   
 </body>
 </html>
