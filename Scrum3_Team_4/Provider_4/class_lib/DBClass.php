@@ -15,7 +15,7 @@ class DBClass_Access
 {
     private static $conn;
     private static $hostName = "localhost";
-    private static $databaseName = "Scrum3_db";
+    private static $databaseName = "scrum3_db";
     private static $userName = "root";
     private static $password = "";
 
