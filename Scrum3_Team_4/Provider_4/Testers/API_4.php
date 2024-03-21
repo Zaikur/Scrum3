@@ -26,16 +26,14 @@ try {
             throw new Exception("Table name is required.");
         }
 
-        switch ($action) {
-            case 'showColumns':
-                $columns = $db->showColumns($tableName);
-                echo json_encode(['success' => true, 'data' => $columns]);
-                break;
-
-            default:
-                $rows = $db->displayRecords($tableName);
-                echo json_encode(['success' => true, 'data' => $rows]);
-                break;
+        if ($action === 'showColumns') {
+            $columns = $db->showColumns($tableName);
+            echo json_encode(['success' => true, 'data' => $columns]);
+            return;
+        } else {
+            $rows = $db->displayRecords($tableName);
+            echo json_encode(['success' => true, 'data' => $rows]);
+            return;
         }
     }
     else if ($method === 'POST') {
