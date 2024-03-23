@@ -10,6 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>API Tester</title>
+    <link rel="stylesheet" href="../../styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
     function testApi(action, method, data) {
@@ -29,7 +30,7 @@
     </script>
 </head>
 <body>
-    <h1>API Function Tester</h1>
+    <h1 class="tester">API Function Tester</h1>
     <div>
         <button onclick="testApi('showRecords', 'GET', {tableName: 'users'})">Show Columns for Users</button>
         <button onclick="testApi('showRecords', 'GET', {tableName: 'posts'})">Show Columns for Users</button>

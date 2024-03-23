@@ -36,12 +36,17 @@ a {
 }
 
 h1 {
-    color: #333;
+    color: white;
     text-align: center;
+}
+
+p {
+    margin-left: 3em;
 }
 
 ul {
     list-style: none;
+    margin-left: 3em;
     padding-left: 0;
 }
 
