@@ -30,6 +30,10 @@ try {
             $columns = $db->showColumns($tableName);
             echo json_encode(['success' => true, 'data' => $columns]);
             return;
+        } elseif ($action === 'showRecords') {
+            $rows = $db->displayRecords($tableName);
+            echo json_encode(['success' => true, 'data' => $rows]);
+            return;
         } else {
             $rows = $db->displayRecords($tableName);
             echo json_encode(['success' => true, 'data' => $rows]);

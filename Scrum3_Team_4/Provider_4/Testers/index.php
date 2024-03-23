@@ -9,7 +9,7 @@
 <body>
     <h1>Database Tester</h1>
     <ul>
-        <li><a href="test_api.php">Test API (JSON Format)</a></li>
+        <li><a href="test_api.html">Test API (JSON Format)</a></li>
         <li><a href="display_tables.php">Display Tables in HTML</a></li>
     </ul>
 
