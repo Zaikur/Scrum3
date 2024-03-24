@@ -59,4 +59,4 @@ foreach ($tables as $table) {
 
 echo "</body>";
 echo "</html>";
-?>;
+?>
