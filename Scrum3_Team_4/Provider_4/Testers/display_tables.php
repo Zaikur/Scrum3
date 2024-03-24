@@ -1,5 +1,7 @@
 <?php
 /***********************************************************
+ * Ethan Niehus
+ * 3/23/2024
  * This file will return values from tables in HTML elements
  ***********************************************************/
 
@@ -59,4 +61,4 @@ foreach ($tables as $table) {
 
 echo "</body>";
 echo "</html>";
-?>
+?>;
